@@ -31,3 +31,15 @@ console.log(capitalize("test Test tst"));
 console.log(capitalize(""));
 console.log(capitalize(null));
 console.log(capitalize({}));
+function snake_case(str) { 
+    if(typeof str !== "string" || !str) return '';
+
+    return str.toLowerCase().split(" ").join("_");
+} 
+console.log(snake_case("test"));
+console.log(snake_case("Test"));
+console.log(snake_case(" test"));
+console.log(snake_case("test2 Test tst"));
+console.log(snake_case(""));
+console.log(snake_case(null));
+console.log(snake_case({}));
