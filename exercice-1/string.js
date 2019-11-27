@@ -57,4 +57,19 @@ console.log(snake_case("test2 Test tst"));
 console.log(snake_case(""));
 console.log(snake_case(null));
 console.log(snake_case({}));
+var message = "Ceci est un message sans leet speak !";
+ 
+var messageLeet = "";
+ 
+for (var i = 0; i < message.length; i++) {
+  if (message[i].toLowerCase() === "i") { messageLeet += "1"; }
+  else if (message[i].toLowerCase() === "e") { messageLeet += "3"; }
+  else if (message[i].toLowerCase() === "a") { messageLeet += "4"; }
+  else if (message[i].toLowerCase() === "t") { messageLeet += "7"; }
+  else if (message[i].toLowerCase() === "s") { messageLeet += "5"; }
+  else if (message[i].toLowerCase() === "o") { messageLeet += "0"; }
+  else { messageLeet += message[i].toLowerCase(); }
+}
+ 
+console.log(messageLeet);
 
