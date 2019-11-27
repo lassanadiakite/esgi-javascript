@@ -59,12 +59,12 @@ console.log(snake_case(null));
 console.log(snake_case({}));
 
  
-function replaceChr(chr) {
+function leet(chr) {
     var chrs = {'a':'4','e':'3','i':'1','t':'7','s':'5','o':'0'};
     return chrs[chr.toLowerCase()] || chr;
   }
    
   var message = "Ceci est un message sans leet speak !";
    
-  console.log( message.replace(/[aeltso]/g, replaceChr) );
+  console.log( message.replace(/[aeltso]/g, leet) );
 
